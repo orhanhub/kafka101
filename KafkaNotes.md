@@ -214,5 +214,11 @@ Producer sending a non-existing topic creates the new topic, with a warning, but
 If you want to update default options, set server.properties file for num.partitions=3, this will create 3 partitions
 
 
+To see the topics posted, start bootstrap server
 
+``` kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic first_topic```
+
+As you type messages on the producer, the consumer will show the results.
+
+End of the Kafka Basics
 
